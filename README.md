@@ -8,11 +8,11 @@ To build, simply run the following. You will need Go installed to build the exec
 Getting started
 ---
 
-To see the help and options, run the following command
+To see the options, run the following command:
 
     $ ./shortest-path --help
 
-For convinence, a random flag is included that creates a sample graph and find the distance between two random vertices as following
+For convinence, a random flag is included that creates a sample graph and finds the distance between two random vertices like the following
 
 ```sh
 ./shortest-path --random
@@ -33,12 +33,12 @@ Node3 --(12)--> Node2
 Input Format
 ---
 
-The input format is as following 
+The input format is explained below.
 
 ```
 SIZE
 SOURCE
-VERTEX
+DESTINATION
 ROW 1
 ROW 2
 .
@@ -55,7 +55,7 @@ The `DESTINATION` is the destination node. (0 < DESTINATION <= SIZE)
 
 `Rows 1 through N` are the Adjacancy Distance Matrix where each row represents the distance to from that node to all the other nodes. Distance between the node and itself must be equal to 0. (N == SIZE)
 
-For an exaample of the sample code see the [samplefile.txt](./samplefile.txt)
+For an exaample of the sample input, see the [samplefile.txt](./samplefile.txt)
 
 Read from File
 ---
